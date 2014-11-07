@@ -11,6 +11,7 @@
 #import "StorageServiceCoreData.h"
 #import <CoreData+MagicalRecord.h>
 #import "note.h"
+#import "note+Validation.h"
 
 #import "CDNote.h"
 
@@ -100,15 +101,9 @@ static BOOL needToSave = NO;
   {
     note *_note = [[note alloc] init];
     _note.id = [data valueForKey:@"id"];
+    _note.text = [data valueForKey:@"text"];
     
-    if([[data valueForKey:@"text"] isKindOfClass:[NSNull class]])
-    {
-      _note.text = @"Null";
-    }
-    else
-    {
-      _note.text = [data valueForKey:@"text"];
-    }
+    [_note validateText];
     
     [result addObject:_note];
   }
