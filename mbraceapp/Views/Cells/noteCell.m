@@ -31,11 +31,11 @@
   [mutableActiveLinkAttributes setValue:(__bridge id)[[UIColor colorWithRed:1.0f green:0.0f blue:0.0f alpha:0.25f] CGColor] forKey:(NSString *)kTTTBackgroundStrokeColorAttributeName];
   [mutableActiveLinkAttributes setValue:[NSNumber numberWithFloat:1.0f] forKey:(NSString *)kTTTBackgroundLineWidthAttributeName];
   [mutableActiveLinkAttributes setValue:[NSNumber numberWithFloat:5.0f] forKey:(NSString *)kTTTBackgroundCornerRadiusAttributeName];
-  self.textLabel.activeLinkAttributes = mutableActiveLinkAttributes;
+  textLabel.activeLinkAttributes = mutableActiveLinkAttributes;
   
-  self.textLabel.enabledTextCheckingTypes = NSTextCheckingTypeLink;
-  self.textLabel.text = note;
-  self.textLabel.delegate = self;
+  textLabel.enabledTextCheckingTypes = NSTextCheckingTypeLink;
+  textLabel.text = note;
+  textLabel.delegate = self;
 }
 
 //------------------------------------------------//
@@ -43,7 +43,7 @@
 - (void)attributedLabel:(__unused TTTAttributedLabel *)label
    didSelectLinkWithURL:(NSURL *)url
 {
-  [[[UIActionSheet alloc] initWithTitle:[url absoluteString] delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", nil) destructiveButtonTitle:nil otherButtonTitles:NSLocalizedString(@"Open Link in Safari", nil), nil] showInView:self.superview];
+  [[[UIActionSheet alloc] initWithTitle:[url absoluteString] delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", nil) destructiveButtonTitle:nil otherButtonTitles:NSLocalizedString(@"Open in Browser", nil), nil] showInView:self.superview];
 }
 
 //------------------------------------------------//

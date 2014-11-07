@@ -102,13 +102,6 @@
 
 //------------------------------------------------//
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-  
-}
-
-//------------------------------------------------//
-
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   note *_note = [_notes objectAtIndex:indexPath.row];
@@ -146,9 +139,13 @@
   [self start];
 }
 
+//------------------------------------------------//
+
 - (void)didReceiveMemoryWarning
 {
   [super didReceiveMemoryWarning];
 }
+
+//------------------------------------------------//
 
 @end

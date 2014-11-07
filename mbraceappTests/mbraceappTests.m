@@ -6,35 +6,61 @@
 //  Copyright (c) 2014. Legion Services Ltd. All rights reserved.
 //
 
+#define HC_SHORTHAND
+
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <OCHamcrest/OCHamcrest.h>
+
+#import "Constants.h"
+#import "StorageServiceCoreData.h"
+#import "ContentProvider.h"
+#import "note.h"
+
+//------------------------------------------------//
 
 @interface mbraceappTests : XCTestCase
 
 @end
 
+//------------------------------------------------//
+
 @implementation mbraceappTests
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+- (void)setUp
+{
+  [super setUp];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+//------------------------------------------------//
+
+- (void)test_storageservice_notes_are_not_empty
+{
+  StorageServiceCoreData *storage = [StorageServiceCoreData sharedClass];
+  
+  NSArray *result = [storage retrieveNotes];
+  
+  assertThat(result,notNilValue());
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+//------------------------------------------------//
+
+- (void)test_contentprovider_notes_are_not_empty
+{
+  ContentProvider *contentProvider = [[ContentProvider alloc] init];
+  
+  NSArray *result = [contentProvider retrieveNotes];
+  
+  assertThat(result,notNilValue());
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+//------------------------------------------------//
+
+- (void)tearDown
+{
+  [super tearDown];
 }
+
+//------------------------------------------------//
 
 @end

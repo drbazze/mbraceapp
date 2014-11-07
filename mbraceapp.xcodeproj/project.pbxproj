@@ -37,6 +37,7 @@
 		020D8CA21A0CD7EA00B58590 /* _CDNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8CA11A0CD7EA00B58590 /* _CDNote.m */; };
 		020D8CA51A0CD7F100B58590 /* CDNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8CA41A0CD7F100B58590 /* CDNote.m */; };
 		020D8CA71A0CD99400B58590 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020D8CA61A0CD99400B58590 /* CoreData.framework */; };
+		020D8CA91A0CE23C00B58590 /* noteCell~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020D8CA81A0CE23C00B58590 /* noteCell~ipad.xib */; };
 		51DE974D4992409CA7D7D0B7 /* libPods-mbraceapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9A5A59A29D04786E5F3C4C /* libPods-mbraceapp.a */; };
 		A4F2993659457CA20EEB783B /* libPods-mbraceappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B06D5999195D9FC54CC0DA /* libPods-mbraceappTests.a */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		020D8CA31A0CD7F100B58590 /* CDNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDNote.h; sourceTree = "<group>"; };
 		020D8CA41A0CD7F100B58590 /* CDNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDNote.m; sourceTree = "<group>"; };
 		020D8CA61A0CD99400B58590 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		020D8CA81A0CE23C00B58590 /* noteCell~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "noteCell~ipad.xib"; path = "Views/Cells/noteCell~ipad.xib"; sourceTree = "<group>"; };
 		05B06D5999195D9FC54CC0DA /* libPods-mbraceappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbraceappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED0517E155B7C6C0F2C9F5E /* Pods-mbraceappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbraceappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mbraceappTests/Pods-mbraceappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		80FF76FF8393350C8B5EB35F /* Pods-mbraceapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbraceapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-mbraceapp/Pods-mbraceapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				020D8C891A0CCA8900B58590 /* noteCell.h */,
 				020D8C8A1A0CCA8900B58590 /* noteCell.m */,
 				020D8C8C1A0CCA9D00B58590 /* noteCell~iphone.xib */,
+				020D8CA81A0CE23C00B58590 /* noteCell~ipad.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				020D8C5A1A0CC2BC00B58590 /* Main.storyboard in Resources */,
 				020D8C5F1A0CC2BC00B58590 /* LaunchScreen.xib in Resources */,
 				020D8C5C1A0CC2BC00B58590 /* Images.xcassets in Resources */,
+				020D8CA91A0CE23C00B58590 /* noteCell~ipad.xib in Resources */,
 				020D8C8D1A0CCA9D00B58590 /* noteCell~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
