@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		020D8C9B1A0CD78D00B58590 /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 020D8C9C1A0CD78D00B58590 /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				020D8C9F1A0CD79400B58590 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		020D8C511A0CC2BC00B58590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8C501A0CC2BC00B58590 /* main.m */; };
 		020D8C541A0CC2BC00B58590 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8C531A0CC2BC00B58590 /* AppDelegate.m */; };
@@ -14,6 +28,17 @@
 		020D8C5C1A0CC2BC00B58590 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020D8C5B1A0CC2BC00B58590 /* Images.xcassets */; };
 		020D8C5F1A0CC2BC00B58590 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020D8C5D1A0CC2BC00B58590 /* LaunchScreen.xib */; };
 		020D8C6B1A0CC2BC00B58590 /* mbraceappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8C6A1A0CC2BC00B58590 /* mbraceappTests.m */; };
+		020D8C7F1A0CC71E00B58590 /* ContentProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8C7E1A0CC71E00B58590 /* ContentProvider.m */; };
+		020D8C831A0CC7CE00B58590 /* StorageServiceCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8C821A0CC7CE00B58590 /* StorageServiceCoreData.m */; };
+		020D8C8B1A0CCA8900B58590 /* noteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8C8A1A0CCA8900B58590 /* noteCell.m */; };
+		020D8C8D1A0CCA9D00B58590 /* noteCell~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020D8C8C1A0CCA9D00B58590 /* noteCell~iphone.xib */; };
+		020D8C911A0CCDCA00B58590 /* note.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8C901A0CCDCA00B58590 /* note.m */; };
+		020D8C9A1A0CD6DA00B58590 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 020D8C981A0CD6DA00B58590 /* Model.xcdatamodeld */; };
+		020D8CA21A0CD7EA00B58590 /* _CDNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8CA11A0CD7EA00B58590 /* _CDNote.m */; };
+		020D8CA51A0CD7F100B58590 /* CDNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8CA41A0CD7F100B58590 /* CDNote.m */; };
+		020D8CA71A0CD99400B58590 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020D8CA61A0CD99400B58590 /* CoreData.framework */; };
+		51DE974D4992409CA7D7D0B7 /* libPods-mbraceapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9A5A59A29D04786E5F3C4C /* libPods-mbraceapp.a */; };
+		A4F2993659457CA20EEB783B /* libPods-mbraceappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B06D5999195D9FC54CC0DA /* libPods-mbraceappTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +65,29 @@
 		020D8C641A0CC2BC00B58590 /* mbraceappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mbraceappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		020D8C691A0CC2BC00B58590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		020D8C6A1A0CC2BC00B58590 /* mbraceappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mbraceappTests.m; sourceTree = "<group>"; };
+		020D8C7D1A0CC71E00B58590 /* ContentProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentProvider.h; path = Providers/ContentProvider.h; sourceTree = "<group>"; };
+		020D8C7E1A0CC71E00B58590 /* ContentProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContentProvider.m; path = Providers/ContentProvider.m; sourceTree = "<group>"; };
+		020D8C811A0CC7CE00B58590 /* StorageServiceCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StorageServiceCoreData.h; path = Services/StorageServiceCoreData.h; sourceTree = "<group>"; };
+		020D8C821A0CC7CE00B58590 /* StorageServiceCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StorageServiceCoreData.m; path = Services/StorageServiceCoreData.m; sourceTree = "<group>"; };
+		020D8C861A0CC84A00B58590 /* IStorageService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IStorageService.h; path = Contracts/Interfaces/IStorageService.h; sourceTree = "<group>"; };
+		020D8C891A0CCA8900B58590 /* noteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = noteCell.h; path = Views/Cells/noteCell.h; sourceTree = "<group>"; };
+		020D8C8A1A0CCA8900B58590 /* noteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = noteCell.m; path = Views/Cells/noteCell.m; sourceTree = "<group>"; };
+		020D8C8C1A0CCA9D00B58590 /* noteCell~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "noteCell~iphone.xib"; path = "Views/Cells/noteCell~iphone.xib"; sourceTree = "<group>"; };
+		020D8C8F1A0CCDCA00B58590 /* note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = note.h; path = Models/note.h; sourceTree = "<group>"; };
+		020D8C901A0CCDCA00B58590 /* note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = note.m; path = Models/note.m; sourceTree = "<group>"; };
+		020D8C931A0CCE8E00B58590 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Config/Constants.h; sourceTree = "<group>"; };
+		020D8C991A0CD6DA00B58590 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		020D8CA01A0CD7EA00B58590 /* _CDNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CDNote.h; sourceTree = "<group>"; };
+		020D8CA11A0CD7EA00B58590 /* _CDNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CDNote.m; sourceTree = "<group>"; };
+		020D8CA31A0CD7F100B58590 /* CDNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDNote.h; sourceTree = "<group>"; };
+		020D8CA41A0CD7F100B58590 /* CDNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDNote.m; sourceTree = "<group>"; };
+		020D8CA61A0CD99400B58590 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		05B06D5999195D9FC54CC0DA /* libPods-mbraceappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbraceappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED0517E155B7C6C0F2C9F5E /* Pods-mbraceappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbraceappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mbraceappTests/Pods-mbraceappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80FF76FF8393350C8B5EB35F /* Pods-mbraceapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbraceapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-mbraceapp/Pods-mbraceapp.release.xcconfig"; sourceTree = "<group>"; };
+		A167E14620E2EE6E73CC7BF9 /* Pods-mbraceapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbraceapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mbraceapp/Pods-mbraceapp.debug.xcconfig"; sourceTree = "<group>"; };
+		C76CB3F38642A9385C496E1D /* Pods-mbraceappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbraceappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mbraceappTests/Pods-mbraceappTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF9A5A59A29D04786E5F3C4C /* libPods-mbraceapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbraceapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020D8CA71A0CD99400B58590 /* CoreData.framework in Frameworks */,
+				51DE974D4992409CA7D7D0B7 /* libPods-mbraceapp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F2993659457CA20EEB783B /* libPods-mbraceappTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +117,8 @@
 				020D8C4D1A0CC2BC00B58590 /* mbraceapp */,
 				020D8C671A0CC2BC00B58590 /* mbraceappTests */,
 				020D8C4C1A0CC2BC00B58590 /* Products */,
+				829A25788242FCD0A06F2706 /* Pods */,
+				556E6930CC67375A69513D9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +134,15 @@
 		020D8C4D1A0CC2BC00B58590 /* mbraceapp */ = {
 			isa = PBXGroup;
 			children = (
-				020D8C521A0CC2BC00B58590 /* AppDelegate.h */,
-				020D8C531A0CC2BC00B58590 /* AppDelegate.m */,
-				020D8C551A0CC2BC00B58590 /* ViewController.h */,
-				020D8C561A0CC2BC00B58590 /* ViewController.m */,
-				020D8C581A0CC2BC00B58590 /* Main.storyboard */,
+				020D8C741A0CC46000B58590 /* Application */,
+				020D8C921A0CCE7F00B58590 /* Config */,
+				020D8C841A0CC7FA00B58590 /* Contracts */,
+				020D8C751A0CC48100B58590 /* Controller */,
 				020D8C5B1A0CC2BC00B58590 /* Images.xcassets */,
-				020D8C5D1A0CC2BC00B58590 /* LaunchScreen.xib */,
-				020D8C4E1A0CC2BC00B58590 /* Supporting Files */,
+				020D8C8E1A0CCDB700B58590 /* Models */,
+				020D8C781A0CC5B800B58590 /* Providers */,
+				020D8C801A0CC7A200B58590 /* Services */,
+				020D8C871A0CCA5900B58590 /* Views */,
 			);
 			path = mbraceapp;
 			sourceTree = "<group>";
@@ -119,6 +173,163 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		020D8C741A0CC46000B58590 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C4E1A0CC2BC00B58590 /* Supporting Files */,
+				020D8C521A0CC2BC00B58590 /* AppDelegate.h */,
+				020D8C531A0CC2BC00B58590 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		020D8C751A0CC48100B58590 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C761A0CC4B500B58590 /* Root */,
+				020D8C771A0CC4BE00B58590 /* Splashscreen */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		020D8C761A0CC4B500B58590 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C551A0CC2BC00B58590 /* ViewController.h */,
+				020D8C561A0CC2BC00B58590 /* ViewController.m */,
+				020D8C581A0CC2BC00B58590 /* Main.storyboard */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		020D8C771A0CC4BE00B58590 /* Splashscreen */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C5D1A0CC2BC00B58590 /* LaunchScreen.xib */,
+			);
+			name = Splashscreen;
+			sourceTree = "<group>";
+		};
+		020D8C781A0CC5B800B58590 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C7D1A0CC71E00B58590 /* ContentProvider.h */,
+				020D8C7E1A0CC71E00B58590 /* ContentProvider.m */,
+			);
+			name = Providers;
+			sourceTree = "<group>";
+		};
+		020D8C801A0CC7A200B58590 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C811A0CC7CE00B58590 /* StorageServiceCoreData.h */,
+				020D8C821A0CC7CE00B58590 /* StorageServiceCoreData.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		020D8C841A0CC7FA00B58590 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C851A0CC7FF00B58590 /* Interfaces */,
+			);
+			name = Contracts;
+			sourceTree = "<group>";
+		};
+		020D8C851A0CC7FF00B58590 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C861A0CC84A00B58590 /* IStorageService.h */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		020D8C871A0CCA5900B58590 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C881A0CCA6200B58590 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		020D8C881A0CCA6200B58590 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C891A0CCA8900B58590 /* noteCell.h */,
+				020D8C8A1A0CCA8900B58590 /* noteCell.m */,
+				020D8C8C1A0CCA9D00B58590 /* noteCell~iphone.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		020D8C8E1A0CCDB700B58590 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C951A0CD6C900B58590 /* CoreData */,
+				020D8C8F1A0CCDCA00B58590 /* note.h */,
+				020D8C901A0CCDCA00B58590 /* note.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		020D8C921A0CCE7F00B58590 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C931A0CCE8E00B58590 /* Constants.h */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		020D8C951A0CD6C900B58590 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				020D8C961A0CD6C900B58590 /* Machine */,
+				020D8C971A0CD6C900B58590 /* Models */,
+				020D8C981A0CD6DA00B58590 /* Model.xcdatamodeld */,
+			);
+			name = CoreData;
+			path = Models/CoreData;
+			sourceTree = "<group>";
+		};
+		020D8C961A0CD6C900B58590 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				020D8CA01A0CD7EA00B58590 /* _CDNote.h */,
+				020D8CA11A0CD7EA00B58590 /* _CDNote.m */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
+		020D8C971A0CD6C900B58590 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				020D8CA31A0CD7F100B58590 /* CDNote.h */,
+				020D8CA41A0CD7F100B58590 /* CDNote.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		556E6930CC67375A69513D9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				020D8CA61A0CD99400B58590 /* CoreData.framework */,
+				DF9A5A59A29D04786E5F3C4C /* libPods-mbraceapp.a */,
+				05B06D5999195D9FC54CC0DA /* libPods-mbraceappTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		829A25788242FCD0A06F2706 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A167E14620E2EE6E73CC7BF9 /* Pods-mbraceapp.debug.xcconfig */,
+				80FF76FF8393350C8B5EB35F /* Pods-mbraceapp.release.xcconfig */,
+				5ED0517E155B7C6C0F2C9F5E /* Pods-mbraceappTests.debug.xcconfig */,
+				C76CB3F38642A9385C496E1D /* Pods-mbraceappTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +337,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 020D8C6E1A0CC2BC00B58590 /* Build configuration list for PBXNativeTarget "mbraceapp" */;
 			buildPhases = (
+				D229E8E4712834CED7536842 /* Check Pods Manifest.lock */,
 				020D8C471A0CC2BC00B58590 /* Sources */,
 				020D8C481A0CC2BC00B58590 /* Frameworks */,
 				020D8C491A0CC2BC00B58590 /* Resources */,
+				02452E315CF6AC82A6914968 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,9 +356,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 020D8C711A0CC2BC00B58590 /* Build configuration list for PBXNativeTarget "mbraceappTests" */;
 			buildPhases = (
+				8EAD112F54BE30C616F45B2D /* Check Pods Manifest.lock */,
 				020D8C601A0CC2BC00B58590 /* Sources */,
 				020D8C611A0CC2BC00B58590 /* Frameworks */,
 				020D8C621A0CC2BC00B58590 /* Resources */,
+				EB073358A093401528A89670 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +388,9 @@
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 020D8C4A1A0CC2BC00B58590;
 					};
+					020D8C9B1A0CD78D00B58590 = {
+						CreatedOnToolsVersion = 6.1;
+					};
 				};
 			};
 			buildConfigurationList = 020D8C461A0CC2BC00B58590 /* Build configuration list for PBXProject "mbraceapp" */;
@@ -190,6 +408,7 @@
 			targets = (
 				020D8C4A1A0CC2BC00B58590 /* mbraceapp */,
 				020D8C631A0CC2BC00B58590 /* mbraceappTests */,
+				020D8C9B1A0CD78D00B58590 /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +421,7 @@
 				020D8C5A1A0CC2BC00B58590 /* Main.storyboard in Resources */,
 				020D8C5F1A0CC2BC00B58590 /* LaunchScreen.xib in Resources */,
 				020D8C5C1A0CC2BC00B58590 /* Images.xcassets in Resources */,
+				020D8C8D1A0CCA9D00B58590 /* noteCell~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,13 +434,96 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		020D8C9F1A0CD79400B58590 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd mbraceapp/Models/CoreData\nmogenerator --v2 --model Model.xcdatamodeld/Model.xcdatamodel/ -O Models/ --template-var arc=YES --machine-dir Machine/";
+		};
+		02452E315CF6AC82A6914968 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mbraceapp/Pods-mbraceapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EAD112F54BE30C616F45B2D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D229E8E4712834CED7536842 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB073358A093401528A89670 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mbraceappTests/Pods-mbraceappTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		020D8C471A0CC2BC00B58590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020D8CA51A0CD7F100B58590 /* CDNote.m in Sources */,
 				020D8C571A0CC2BC00B58590 /* ViewController.m in Sources */,
+				020D8C911A0CCDCA00B58590 /* note.m in Sources */,
 				020D8C541A0CC2BC00B58590 /* AppDelegate.m in Sources */,
+				020D8C9A1A0CD6DA00B58590 /* Model.xcdatamodeld in Sources */,
+				020D8CA21A0CD7EA00B58590 /* _CDNote.m in Sources */,
+				020D8C831A0CC7CE00B58590 /* StorageServiceCoreData.m in Sources */,
+				020D8C8B1A0CCA8900B58590 /* noteCell.m in Sources */,
+				020D8C7F1A0CC71E00B58590 /* ContentProvider.m in Sources */,
 				020D8C511A0CC2BC00B58590 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +646,7 @@
 		};
 		020D8C6F1A0CC2BC00B58590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A167E14620E2EE6E73CC7BF9 /* Pods-mbraceapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mbraceapp/Info.plist;
@@ -353,6 +657,7 @@
 		};
 		020D8C701A0CC2BC00B58590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FF76FF8393350C8B5EB35F /* Pods-mbraceapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = mbraceapp/Info.plist;
@@ -363,6 +668,7 @@
 		};
 		020D8C721A0CC2BC00B58590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED0517E155B7C6C0F2C9F5E /* Pods-mbraceappTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -382,6 +688,7 @@
 		};
 		020D8C731A0CC2BC00B58590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C76CB3F38642A9385C496E1D /* Pods-mbraceappTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -392,6 +699,20 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbraceapp.app/mbraceapp";
+			};
+			name = Release;
+		};
+		020D8C9D1A0CD78D00B58590 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		020D8C9E1A0CD78D00B58590 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -414,6 +735,7 @@
 				020D8C701A0CC2BC00B58590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		020D8C711A0CC2BC00B58590 /* Build configuration list for PBXNativeTarget "mbraceappTests" */ = {
 			isa = XCConfigurationList;
@@ -422,8 +744,30 @@
 				020D8C731A0CC2BC00B58590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020D8C9C1A0CD78D00B58590 /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020D8C9D1A0CD78D00B58590 /* Debug */,
+				020D8C9E1A0CD78D00B58590 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		020D8C981A0CD6DA00B58590 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				020D8C991A0CD6DA00B58590 /* Model.xcdatamodel */,
+			);
+			currentVersion = 020D8C991A0CD6DA00B58590 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 020D8C431A0CC2BC00B58590 /* Project object */;
 }

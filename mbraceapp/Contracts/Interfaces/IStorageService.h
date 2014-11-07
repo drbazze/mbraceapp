@@ -1,18 +1,17 @@
 //
-//  ViewController.h
+//  IStorageService.h
 //  mbraceapp
 //
 //  Created by Zumpf Tamás on 2014. 11. 07..
 //  Copyright (c) 2014. Legion Services Ltd. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-{
-  IBOutlet UITableView *contentTable;
-}
 
+@protocol IStorageService <NSObject>
+
+@required
+- (NSArray *)retrieveNotes;
 
 @end
-
