@@ -39,6 +39,10 @@
 		020D8CA71A0CD99400B58590 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020D8CA61A0CD99400B58590 /* CoreData.framework */; };
 		020D8CA91A0CE23C00B58590 /* noteCell~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 020D8CA81A0CE23C00B58590 /* noteCell~ipad.xib */; };
 		020D8CAD1A0CE68B00B58590 /* note+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 020D8CAC1A0CE68B00B58590 /* note+Validation.m */; };
+		025A6C001A0CE8AF009CAEF8 /* icon-57@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 025A6BFC1A0CE8AF009CAEF8 /* icon-57@2x~iphone.png */; };
+		025A6C011A0CE8AF009CAEF8 /* icon-57~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 025A6BFD1A0CE8AF009CAEF8 /* icon-57~iphone.png */; };
+		025A6C021A0CE8AF009CAEF8 /* icon-60@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 025A6BFE1A0CE8AF009CAEF8 /* icon-60@2x~iphone.png */; };
+		025A6C031A0CE8AF009CAEF8 /* icon-60~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 025A6BFF1A0CE8AF009CAEF8 /* icon-60~iphone.png */; };
 		51DE974D4992409CA7D7D0B7 /* libPods-mbraceapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9A5A59A29D04786E5F3C4C /* libPods-mbraceapp.a */; };
 		A4F2993659457CA20EEB783B /* libPods-mbraceappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B06D5999195D9FC54CC0DA /* libPods-mbraceappTests.a */; };
 /* End PBXBuildFile section */
@@ -87,6 +91,10 @@
 		020D8CA81A0CE23C00B58590 /* noteCell~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "noteCell~ipad.xib"; path = "Views/Cells/noteCell~ipad.xib"; sourceTree = "<group>"; };
 		020D8CAB1A0CE68B00B58590 /* note+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "note+Validation.h"; path = "Categories/note+Validation.h"; sourceTree = "<group>"; };
 		020D8CAC1A0CE68B00B58590 /* note+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "note+Validation.m"; path = "Categories/note+Validation.m"; sourceTree = "<group>"; };
+		025A6BFC1A0CE8AF009CAEF8 /* icon-57@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57@2x~iphone.png"; sourceTree = "<group>"; };
+		025A6BFD1A0CE8AF009CAEF8 /* icon-57~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-57~iphone.png"; sourceTree = "<group>"; };
+		025A6BFE1A0CE8AF009CAEF8 /* icon-60@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x~iphone.png"; sourceTree = "<group>"; };
+		025A6BFF1A0CE8AF009CAEF8 /* icon-60~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60~iphone.png"; sourceTree = "<group>"; };
 		05B06D5999195D9FC54CC0DA /* libPods-mbraceappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbraceappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED0517E155B7C6C0F2C9F5E /* Pods-mbraceappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbraceappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mbraceappTests/Pods-mbraceappTests.debug.xcconfig"; sourceTree = "<group>"; };
 		80FF76FF8393350C8B5EB35F /* Pods-mbraceapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbraceapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-mbraceapp/Pods-mbraceapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +155,7 @@
 				020D8C5B1A0CC2BC00B58590 /* Images.xcassets */,
 				020D8C8E1A0CCDB700B58590 /* Models */,
 				020D8C781A0CC5B800B58590 /* Providers */,
+				025A6BFA1A0CE8AF009CAEF8 /* Resources */,
 				020D8C801A0CC7A200B58590 /* Services */,
 				020D8C871A0CCA5900B58590 /* Views */,
 			);
@@ -325,6 +334,25 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		025A6BFA1A0CE8AF009CAEF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				025A6BFB1A0CE8AF009CAEF8 /* Icons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		025A6BFB1A0CE8AF009CAEF8 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				025A6BFC1A0CE8AF009CAEF8 /* icon-57@2x~iphone.png */,
+				025A6BFD1A0CE8AF009CAEF8 /* icon-57~iphone.png */,
+				025A6BFE1A0CE8AF009CAEF8 /* icon-60@2x~iphone.png */,
+				025A6BFF1A0CE8AF009CAEF8 /* icon-60~iphone.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		556E6930CC67375A69513D9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,9 +464,13 @@
 			files = (
 				020D8C5A1A0CC2BC00B58590 /* Main.storyboard in Resources */,
 				020D8C5F1A0CC2BC00B58590 /* LaunchScreen.xib in Resources */,
+				025A6C031A0CE8AF009CAEF8 /* icon-60~iphone.png in Resources */,
 				020D8C5C1A0CC2BC00B58590 /* Images.xcassets in Resources */,
+				025A6C001A0CE8AF009CAEF8 /* icon-57@2x~iphone.png in Resources */,
+				025A6C011A0CE8AF009CAEF8 /* icon-57~iphone.png in Resources */,
 				020D8CA91A0CE23C00B58590 /* noteCell~ipad.xib in Resources */,
 				020D8C8D1A0CCA9D00B58590 /* noteCell~iphone.xib in Resources */,
+				025A6C021A0CE8AF009CAEF8 /* icon-60@2x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +699,7 @@
 			baseConfigurationReference = A167E14620E2EE6E73CC7BF9 /* Pods-mbraceapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = mbraceapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -678,6 +711,7 @@
 			baseConfigurationReference = 80FF76FF8393350C8B5EB35F /* Pods-mbraceapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = mbraceapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -771,6 +805,7 @@
 				020D8C9E1A0CD78D00B58590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
